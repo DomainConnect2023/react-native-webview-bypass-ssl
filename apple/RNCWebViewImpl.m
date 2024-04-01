@@ -1066,6 +1066,10 @@ RCTAutoInsetsProtocol>
     completionHandler(NSURLSessionAuthChallengeUseCredential, clientAuthenticationCredential);
     return;
   }
+  SecTrustRef trust = [[challenge protectionSpace] serverTrust];
+   NSURLCredential *useCredential = [NSURLCredential credentialForTrust:trust];
+    completionHandler(NSURLSessionAuthChallengeUseCredential, useCredential);
+    return;
   if ([[challenge protectionSpace] serverTrust] != nil && customCertificatesForHost != nil && host != nil) {
     SecCertificateRef localCertificate = (__bridge SecCertificateRef)([customCertificatesForHost objectForKey:host]);
     if (localCertificate != nil) {

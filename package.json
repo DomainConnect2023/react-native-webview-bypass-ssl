@@ -1,5 +1,5 @@
 {
-  "name": "react-native-webview",
+  "name": "react-native-webview-domain",
   "description": "React Native WebView component for iOS, Android, macOS, and Windows",
   "main": "index.js",
   "main-internal": "src/index.ts",
@@ -10,7 +10,7 @@
     "Thibault Malbranche <malbranche.thibault@gmail.com>"
   ],
   "license": "MIT",
-  "version": "13.6.3",
+  "version": "13.6.39",
   "homepage": "https://github.com/react-native-webview/react-native-webview#readme",
   "scripts": {
     "android": "react-native run-android",
@@ -68,12 +68,12 @@
     "selenium-appium": "1.0.2",
     "selenium-webdriver": "4.0.0-alpha.7",
     "semantic-release": "15.13.24",
-    "typescript": "^4.0.0",
+    "typescript": "^5.3.3",
     "winappdriver": "^0.0.7"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-native-webview/react-native-webview.git"
+    "url": "git+https://github.com/react-native-webview/react-native-webview.git"
   },
   "files": [
     "android/src",
@@ -87,7 +87,7 @@
     "src",
     "index.js",
     "index.d.ts",
-    "react-native-webview.podspec",
+    "react-native-webview-domain.podspec",
     "react-native.config.js"
   ],
   "resolutions": {
@@ -102,5 +102,12 @@
     "android": {
       "javaPackageName": "com.reactnativecommunity.webview"
     }
+  },
+  "bugs": {
+    "url": "https://github.com/react-native-webview/react-native-webview/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "example"
   }
 }
